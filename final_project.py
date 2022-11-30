@@ -42,7 +42,6 @@ while (counter < 10) and sensorOn:
             sp2 = 0
             counter = 0
             GPIO.output(ledPin, GPIO.LOW)
-            red, ir = m.read_sequential()
 
             if(hrb == True and hr != -999):
                 hr2 = int(hr)
