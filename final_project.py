@@ -43,10 +43,10 @@ while (counter < 10) and sensorOn:
             counter = 0
             GPIO.output(ledPin, GPIO.LOW)
 
-            if(hrb == True and hr != -999):
+            if hr != -999:
                 hr2 = int(hr)
                 print("Heart Rate : ",hr2)
-            if(spb == True and sp != -999):
+            if sp != -999:
                 sp2 = int(sp)
                 print("SPO2       : ",sp2)
             register.append([row,hr2,sp2])
